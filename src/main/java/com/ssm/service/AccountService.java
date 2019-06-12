@@ -1,6 +1,6 @@
-package com.itheima.service;
+package com.ssm.service;
 
-import com.itheima.domain.Account;
+import com.ssm.domain.Account;
 
 import java.util.List;
 

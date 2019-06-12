@@ -1,6 +1,6 @@
-package com.itheima.dao;
+package com.ssm.dao;
 
-import com.itheima.domain.Account;
+import com.ssm.domain.Account;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;

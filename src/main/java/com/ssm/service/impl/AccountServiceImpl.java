@@ -1,8 +1,8 @@
-package com.itheima.service.impl;
+package com.ssm.service.impl;
 
-import com.itheima.dao.AccountDao;
-import com.itheima.domain.Account;
-import com.itheima.service.AccountService;
+import com.ssm.dao.AccountDao;
+import com.ssm.domain.Account;
+import com.ssm.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

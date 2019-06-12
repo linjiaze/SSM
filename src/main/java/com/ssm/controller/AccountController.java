@@ -1,8 +1,8 @@
-package com.itheima.controller;
+package com.ssm.controller;
 
 import com.github.pagehelper.PageHelper;
-import com.itheima.domain.Account;
-import com.itheima.service.AccountService;
+import com.ssm.domain.Account;
+import com.ssm.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

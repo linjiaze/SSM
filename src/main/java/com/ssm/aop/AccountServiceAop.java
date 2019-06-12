@@ -1,7 +1,6 @@
-package com.itheima.aop;
+package com.ssm.aop;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -9,18 +8,18 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AccountServiceAop {
 
-    @Before("execution(* com.itheima.service.impl.*.*(..))")
+    @Before("execution(* com.ssm.service.impl.*.*(..))")
     public void before(JoinPoint joinPoint) {
         System.out.println(joinPoint.getSignature().getName());
     }
 /*
-    @After("execution(* com.itheima.service.impl.*.*(..))")
+    @After("execution(* com.ssm.service.impl.*.*(..))")
     public void after(JoinPoint joinPoint) {
         System.out.println(joinPoint.getSignature().getName());
     }*/
 
 /*
-    @Around("execution(* com.itheima.service.impl.*.*(..))")
+    @Around("execution(* com.ssm.service.impl.*.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("方法前加强");
         Object proceed = pjp.proceed();
@@ -28,7 +27,7 @@ public class AccountServiceAop {
         return proceed;
     }
 
-    @AfterThrowing("execution(* com.itheima.service.impl.*.*(..))")
+    @AfterThrowing("execution(* com.ssm.service.impl.*.*(..))")
     public void afterThrow() throws Throwable {
         System.out.println("出现异常");
     }

@@ -1,4 +1,4 @@
-package com.itheima.domain;
+package com.ssm.domain;
 
 public class Account {
     private Integer id;

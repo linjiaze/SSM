@@ -14,7 +14,7 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--组件扫描-->
-    <context:component-scan base-package="com.itheima.service, com.itheima.exception, com.itheima.aop"/>
+    <context:component-scan base-package="com.ssm.service, com.ssm.exception, com.ssm.aop"/>
 
     <!--配置数据源-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -41,7 +41,7 @@
     </bean>
 
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.itheima.dao"/>
+        <property name="basePackage" value="com.ssm.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
