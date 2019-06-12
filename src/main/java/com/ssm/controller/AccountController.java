@@ -32,7 +32,7 @@ public class AccountController {
         PageHelper.startPage(pageNum, pageSize);
         List<Account> accountList = accountService.findAll();
         mv.addObject("accountList", accountList);
-        mv.setViewName("listPages");
+        mv.setViewName("list");
         return mv;
     }
 
