@@ -16,14 +16,12 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public List<Account> findAll() {
-//        System.out.println("查询所有");
         return accountDao.findAll();
     }
 
     @Override
     @Transactional
     public boolean transMoney(String form, String to, Double money) {
-//        System.out.println("转账");
         Double remaining = accountDao.findRemainingByName(form);
         if (remaining < money) {
             return false;
